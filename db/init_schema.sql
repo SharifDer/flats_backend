@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS apartments (
     id SERIAL PRIMARY KEY,                  -- Auto-incremented ID for each apartment
     firebase_id_user VARCHAR(255),           -- Firebase ID of the user who posted the apartment
     title VARCHAR(255) NOT NULL,             -- Title of the apartment
-    type VARCHAR(100) NOT NULL,              -- Type of the apartment (e.g., "2BHK", "Studio")
+    type VARCHAR(100) NOT NULL,              -- Type of the apartment (e.g."فلة", "استوديو", "شقة")
     address TEXT NOT NULL,                   -- Address of the apartment
     price DECIMAL(10, 2) NOT NULL,           -- Price of the apartment
     number_of_rooms INT,                    -- Number of rooms
@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS apartments (
     description TEXT,                       -- Description of the apartment
     posted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,  -- Timestamp of when the apartment is posted
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, -- Timestamp of when the apartment details are updated
-    status BOOLEAN NOT NULL,
+    status BOOLEAN NOT NULL,                   -- True means the apartments is available for rent. False means the apartments has been rented or the owner no longer wants tenant
     FOREIGN KEY (firebase_id_user) REFERENCES users(firebase_id) ON DELETE CASCADE  -- Foreign key linking to 'users'
 );
 
