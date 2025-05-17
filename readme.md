@@ -44,6 +44,7 @@ This is the backend service for the **Sakan Sanaa** web application, built using
   Update the status of an apartment (requires auth).
 
 ## Project Structure
+```text
 backend/
 ├── app/                     # Authentication, routing, and request handling
 │   ├── auth.py
@@ -57,4 +58,5 @@ backend/
 ├── app_dtypes/              # Pydantic request and response models
 │   ├── request_dtypes.py
 │   └── response_dtypes.py
-└── fastapi_app.py                  # FastAPI app entry point
+└── fastapi_app.py           # FastAPI app entry point
+```
