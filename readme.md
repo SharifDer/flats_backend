@@ -48,7 +48,7 @@ backend/
 ├── app/                     # Authentication, routing, and request handling
 │   ├── auth.py
 │   ├── data_fetcher.py
-│   
+│   └── ...
 ├── services/                # Business logic and integration layers
 │   ├── apartment_services.py
 │   ├── storage_cloudinary.py
@@ -58,5 +58,3 @@ backend/
 │   ├── request_dtypes.py
 │   └── response_dtypes.py
 └── fastapi_app.py                  # FastAPI app entry point
-
-
