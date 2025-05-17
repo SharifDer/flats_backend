@@ -1,4 +1,4 @@
-# Sakan Sanaa Backend
+# flatsfinder Backend
 
 This is the backend service for the **Sakan Sanaa** web application, built using FastAPI. It manages user authentication, apartment listings, and data integration with Firebase and Cloudinary.
 
