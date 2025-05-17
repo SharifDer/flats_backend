@@ -45,8 +45,18 @@ This is the backend service for the **Sakan Sanaa** web application, built using
 
 ## Project Structure
 backend/
-├── app/ # Auth, routes, security
-├── services/ # Business logic
-├── config.py # Route constants
-├── app_dtypes/ # Pydantic request/response types
-└── main.py # FastAPI app entry point
+├── app/                     # Authentication, routing, and request handling
+│   ├── auth.py
+│   ├── data_fetcher.py
+│   
+├── services/                # Business logic and integration layers
+│   ├── apartment_services.py
+│   ├── storage_cloudinary.py
+│   └── user_services.py
+├── config.py                # Centralized configuration and route constants
+├── app_dtypes/              # Pydantic request and response models
+│   ├── request_dtypes.py
+│   └── response_dtypes.py
+└── fastapi_app.py                  # FastAPI app entry point
+
+
